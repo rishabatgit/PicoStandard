@@ -6,7 +6,7 @@ if [ "$1" != "init" ] || [ -z "$2" ]; then
 fi
 
 PROJECT_NAME=$2
-TEMPLATE_DIR=~/dev/tools/pico-standard/templates
+TEMPLATE_DIR=~/Dev/tools/pico-standard/templates
 
 mkdir -p "$PROJECT_NAME/src"
 cd "$PROJECT_NAME"
@@ -19,7 +19,7 @@ sed "s/PROJECT_NAME/$PROJECT_NAME/g" \
 mkdir build
 cd build
 
-export PICO_SDK_PATH=~/dev/tools/pico-sdk
+export PICO_SDK_PATH=~/Dev/tools/pico-sdk
 
 cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 
