@@ -1,8 +1,9 @@
+
 cmake_minimum_required(VERSION 3.13)
 
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
-project(PROJECT_NAME)
+project(PROJECT_NAME C CXX ASM)
 
 pico_sdk_init()
 
@@ -19,3 +20,4 @@ pico_enable_stdio_usb(PROJECT_NAME 1)
 pico_enable_stdio_uart(PROJECT_NAME 0)
 
 pico_add_extra_outputs(PROJECT_NAME)
+
